@@ -22,8 +22,8 @@ COPY --from=build /go/src/github.com/daimler/kosmoo/kosmoo /usr/bin/kosmoo
 ENTRYPOINT ["/usr/bin/kosmoo", "-cloud-conf", "/etc/cloud.conf", "-kubeconfig", "/etc/kubeconfig"]
 EXPOSE 9183
 
-LABEL "org.opencontainers.image.documentation"="https://docs.osism.de" \
+LABEL "org.opencontainers.image.documentation"="https://docs.osism.tech" \
       "org.opencontainers.image.licenses"="ASL 2.0" \
       "org.opencontainers.image.source"="https://github.com/osism/container-image-kosmoo" \
-      "org.opencontainers.image.url"="https://www.osism.de" \
+      "org.opencontainers.image.url"="https://www.osism.tech" \
       "org.opencontainers.image.vendor"="OSISM GmbH"
