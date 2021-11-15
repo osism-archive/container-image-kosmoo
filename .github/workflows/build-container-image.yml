@@ -55,4 +55,6 @@ jobs:
           DOCKER_REGISTRY: ${{ secrets.DOCKER_REGISTRY }}
           VERSION: ${{ matrix.version }}
           REPOSITORY: osism/enterprise/kosmoo
-        if: github.ref == 'refs/heads/main'
+        if: |
+          github.repository == 'osism/container-image-kosmoo' &&
+          github.ref == 'refs/heads/main'
